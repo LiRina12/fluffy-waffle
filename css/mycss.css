@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+/* ссфлка на подключение шрифтов, михрома - название шрифта, другое название шрифта смотрим на сайте гугл фонтс */
+body{
+    
+    font-family: Michroma, serif;
+    /* в фонт фэмили обязательно написать название выбранного шрифта и после запятой альтернативу */
+    background: linear-gradient(90deg, #0c1c97 0%, #111b2c 100%);
+}
+p{ color: azure;
+
+}
+.nav-link {
+    color: rgb(181, 200, 219);
+}
+.navbar-nav.nav-link active{
+    color: rgb(160, 166, 193);
+}
+.navbar-brand img{
+width: 40px;
+}
+.navbar-toggler{
+    background-color: antiquewhite;
+}      
+.sidebar{
+   color: #8f8fd8;
+   background: linear-gradient(270deg, #0c1c97 0%, #0f1e3a 100%);
+}
+.card{
+    background: linear-gradient(270deg, #0c1c97 0%, #0f1e3a 100%);
+    color: #8f8fd8;
+    font-family: Michroma, serif;
+}
+.card a{
+    text-decoration: none;
+    color: #8f8fd8;
+}
+
+
+ /* чтобы посмотреть как подключать стили шрифтов вводим в поиске гугл фонтс css api */
+.slide-text,.footer-text{
+    color: azure;
+    margin: auto auto;
+    /* чтобы отступы все были равны, текст оцентрован */
+}
+
+footer{
+    background: linear-gradient(270deg, #0c1c97 0%, #0f1e3a 100%);
+}
+.media-links{
+    display: flex;
+    justify-content: center; 
+    /* джастифи равнение по горизонтали */
+    align-items: center;
+    /* элайн итемс */
+}
+
+.call-animi{
+    animation: myAnim 2s ease 2s infinite normal forwards;
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px){
+    .carousel-indicators{
+        display: none;
+    }
+}
+/* на телефоне кнопки карусели не будут отображаться */

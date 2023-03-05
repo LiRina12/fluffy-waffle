@@ -1,0 +1,39 @@
+.bgvideo{
+    height: 70vh;
+    /* vh - 70 % от окна прсмотра */
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgvideo video{
+    height: 70vh;
+    /* vh - 70 % от окна прсмотра */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.effect{
+    height: 70vh;
+    /* vh - 70 % от окна прсмотра */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    margin-top: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.214);
+}
+.video-text{
+    color: rgb(32, 110, 152);
+    z-index: 2;
+    /* з-индекс это слои */
+}
